@@ -1,0 +1,11 @@
+```javascript
+// ... some Tailwind CSS classes ...
+<div class="bg-gray-200 p-4">
+  <div class="flex">
+    <div class="w-1/2 bg-blue-500 p-2">Div 1</div>
+    <div class="w-1/2 bg-red-500 p-2">Div 2</div>
+  </div>
+</div>
+```
+
+The above code uses Tailwind's `w-1/2` class to make two divs take up half the width each. However, if the parent div has a width less than the combined width of the two child divs, the child divs will overflow and not fit within the parent. This is because `w-1/2` sets the width to 50% of the *parent's* width, not the available viewport or screen width.
